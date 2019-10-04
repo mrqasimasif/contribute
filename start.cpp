@@ -4,7 +4,10 @@ int main()
 {
     int a, b, sum;
     cout << "Enter the two numbers you want to add: ";
-    cin >> a >> b;
+    cout <<"Enter 1st number : ";
+    cin >> a;
+    cout <<"Enter the 2nd number : ";
+    cin >> b;
     sum = (a + b);
     cout << "The addition of " << a << " and " << b << "are: " << sum;
 
