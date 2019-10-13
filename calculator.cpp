@@ -7,6 +7,11 @@ int main()
 	float n1, n2, result;
 	char oper;
 	cout << "The program is calculator of basic calculations ";
+	cout << "Enter '+' for Addition\n";
+	cout << "Enter '-' for Subtractiontion\n";
+	cout << "Enter '*' for Multiplication\n";
+	cout << "Enter '/' for Division\n";
+	
 	cout << "\nEnter 1st Operand : ";
 	cin >> n1;
 	cout << "Enter 2nd Operand : ";
