@@ -1,32 +1,9 @@
+//This program performs basic arithmatic operations
+//Defining simple calculator
 #include <iostream>
 
 using namespace std;
-
-float operation(float num1, float num2, char oper);
-
-int main()
-{
-	float n1, n2, result;
-	char oper;
-	cout << "The program is calculator of basic calculations ";
-	cout << "Enter '+' for Addition\n";
-	cout << "Enter '-' for Subtraction\n";
-	cout << "Enter '*' for Multiplication\n";
-	cout << "Enter '/' for Division\n";
-	
-	cout << "\nEnter 1st Operand : ";
-	cin >> n1;
-	cout << "Enter 2nd Operand : ";
-	cin >> n2;
-	cout << "Enter operator : ";
-	cin >> oper;
-	result = operation(n1, n2, oper);
-
-	cout << "This result of integer expression is : " << result << endl;
-	system("pause");
-	return 0;
-}
-
+//Defining function for arithmatic operations
 float operation(float num1, float num2, char oper)
 {
    while (true)
@@ -39,3 +16,28 @@ float operation(float num1, float num2, char oper)
 			cin >> oper;
 	}
 }
+
+int main()
+{
+	float op1, op2, result;
+	char oper;
+	cout << "The program is calculator of basic calculations ";
+	cout << "Enter '+' for Addition\n";
+	cout << "Enter '-' for Subtraction\n";
+	cout << "Enter '*' for Multiplication\n";
+	cout << "Enter '/' for Division\n";
+	
+	cout << "\nEnter 1st Operand : ";
+	cin >> op1;
+	cout << "\nEnter 2nd Operand : ";
+	cin >> op2;
+	cout << "\nEnter operator : ";
+	cin >> oper;
+	result = operation(n1, n2, oper);
+
+	cout << "This result of integer expression is : " << result << endl;
+	system("pause");
+	return 0;
+}
+#pragma once
+
