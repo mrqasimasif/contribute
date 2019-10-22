@@ -6,12 +6,13 @@ using namespace std;
 //Defining function for arithmatic operations
 float operation(float num1, float num2, char oper)
 {
+//Condition to check whether the inserted operator is true or not
    while (true)
     {
-	  if (oper == '+')   return num1 + num2;
-      if (oper == '-') 	 return num1 - num2;
-      if (oper == '*')   return num1 * num2;
-      if (oper == '/')   return num1 / num2;
+	  if (oper == '+')   return num1 + num2;	//addition of two variables
+      if (oper == '-') 	 return num1 - num2;		//subtraction
+      if (oper == '*')   return num1 * num2;		//multiplication
+      if (oper == '/')   return num1 / num2;		//division
 			cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
 			cin >> oper;
 	}
@@ -34,7 +35,7 @@ int main()
 	cout << "\nEnter operator : ";
 	cin >> oper;
 	result = operation(n1, n2, oper);
-
+	//printing the result of the selected expression
 	cout << "This result of integer expression is : " << result << endl;
 	system("pause");
 	return 0;
