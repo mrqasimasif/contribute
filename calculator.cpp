@@ -4,18 +4,20 @@
 
 using namespace std;
 //Defining function for arithmatic operations
-float operation(float num1, float num2, char oper)
+double operation(double num1, double num2, char oper)
 {
 //Condition to check whether the inserted operator is true or not
    while (true)
     {
-	  if (oper == '+')   return num1 + num2;	//addition of two variables
+      if (oper == '+')   return num1 + num2;		//addition of two variables
       if (oper == '-') 	 return num1 - num2;		//subtraction
       if (oper == '*')   return num1 * num2;		//multiplication
       if (oper == '/')   return num1 / num2;		//division
-			cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
-			cin >> oper;
-	}
+      	//Remainder
+      if (oper == '%')   return static_cast<int>(num1) / static_cast<int>(num2);
+      cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
+      cin >> oper;
+    }
 }
 
 int main()
@@ -27,6 +29,7 @@ int main()
 	cout << "Enter '-' for Subtraction\n";
 	cout << "Enter '*' for Multiplication\n";
 	cout << "Enter '/' for Division\n";
+	cout << "Enter '%' for Remainder\n";
 	
 	cout << "\nEnter 1st Operand : ";
 	cin >> op1;
