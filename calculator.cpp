@@ -19,7 +19,8 @@ double operation(double num1, double num2, char oper)
       cin >> oper;
     }
 }
-
+//Qasim yr pull request merge kr ly
+//Noodz bhejon ga
 int main()
 {
 	float op1, op2, result;
