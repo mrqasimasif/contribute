@@ -20,6 +20,8 @@ double operation(double num1, double num2, char oper)
     }
 }
 
+//Qasim yr pull request merge kr ly
+
 int main()
 {
 	float op1, op2, result;
