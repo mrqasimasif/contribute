@@ -10,13 +10,15 @@ double operation(double num1, double num2, char oper)
    while (true)
     {
       if (oper == '+')   return num1 + num2;		//addition of two variables
-      if (oper == '-') 	 return num1 - num2;		//subtraction
-      if (oper == '*')   return num1 * num2;		//multiplication
-      if (oper == '/')   return num1 / num2;		//division
+      else if (oper == '-') 	 return num1 - num2;		//subtraction
+      else if (oper == '*')   return num1 * num2;		//multiplication
+      else if (oper == '/')   return num1 / num2;		//division
       	//Remainder
-      if (oper == '%')   return static_cast<int>(num1) / static_cast<int>(num2);
-      cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
-      cin >> oper;
+      else if (oper == '%')   return static_cast<int>(num1) / static_cast<int>(num2);
+      else {
+	     	cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
+      		cin >> oper;
+      }
     }
 }
 
