@@ -9,12 +9,12 @@ double operation(double num1, double num2, char oper)
 //Condition to check whether the inserted operator is true or not
    while (true)
     {
-      if (oper == '+')   return num1 + num2;		//addition of two variables
-      else if (oper == '-') 	 return num1 - num2;		//subtraction
-      else if (oper == '*')   return num1 * num2;		//multiplication
-      else if (oper == '/')   return num1 / num2;		//division
+      if (oper == '+')   return num1 + num2;  break;	//addition of two variables
+      else if (oper == '-') 	 return num1 - num2; break;		//subtraction
+      else if (oper == '*')   return num1 * num2; break;	//multiplication
+      else if (oper == '/')   return num1 / num2;  break;	//division
       	//Remainder
-      else if (oper == '%')   return static_cast<int>(num1) / static_cast<int>(num2);
+      else if (oper == '%')   return static_cast<int>(num1) / static_cast<int>(num2);  break;
       else {
 	     	cout << "!!wrong operator!!\nSelect one from the following (+,-,*,/) : ";
       		cin >> oper;
